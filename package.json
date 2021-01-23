@@ -1,0 +1,27 @@
+{
+  "name": "@kevingimbel/eleventy-plugin-caniuse",
+  "version": "1.0.0",
+  "description": "Display caniuse.com tables in 11ty",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "bump": "npm --no-git-tag-version version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevingimbel/eleventy-plugin-caniuse.git"
+  },
+  "keywords": [
+    "11ty",
+    "eleventy",
+    "caniuse",
+    "embed"
+  ],
+  "author": "Kevin Gimbel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kevingimbel/eleventy-plugin-caniuse/issues"
+  },
+  "homepage": "https://github.com/kevingimbel/eleventy-plugin-caniuse#readme"
+}
