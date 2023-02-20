@@ -4,8 +4,8 @@
   "description": "Display caniuse.com tables in 11ty",
   "main": ".eleventy.js",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy",
+    "dev": "npx @11ty/eleventy --serve --watch",
+    "build": "npx @11ty/eleventy --input=dev --output=docs",
     "bump": "npm --no-git-tag-version version"
   },
   "repository": {
@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/kevingimbel/eleventy-plugin-caniuse/issues"
   },
-  "homepage": "https://github.com/kevingimbel/eleventy-plugin-caniuse#readme"
+  "homepage": "https://github.com/kevingimbel/eleventy-plugin-caniuse#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0"
+  }
 }
