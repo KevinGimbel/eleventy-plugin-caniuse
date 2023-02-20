@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plugin Test Page</title>
+</head>
+<body>
+  <h2>All default embed</h2>
+<h3>Code</h3>
+<pre><code class="language-liquid">{% caniuse &quot;css-grid&quot; %}
+</code></pre>
+<h3>Live example</h3>
+<p class="ciu_embed" data-feature="css-grid" data-periods="future_1,current,past_1" data-accessible-colours="true">
+      <picture>
+        <source type="image/webp" srcset="https://caniuse.bitsofco.de/image/css-grid.webp">
+        <source type="image/png" srcset="https://caniuse.bitsofco.de/image/css-grid.png">
+        <img src="https://caniuse.bitsofco.de/image/css-grid.jpg" alt="Data on support for the css-grid feature across the major browsers from caniuse.com">
+      </picture>
+    </p>
+<h2>Only current support</h2>
+<h3>Code</h3>
+<pre><code class="language-liquid">{% caniuse &quot;css-grid&quot; &quot;current&quot; %}
+</code></pre>
+<h3>Live example</h3>
+<p class="ciu_embed" data-feature="css-grid" data-periods="current" data-accessible-colours="true">
+      <picture>
+        <source type="image/webp" srcset="https://caniuse.bitsofco.de/image/css-grid.webp">
+        <source type="image/png" srcset="https://caniuse.bitsofco.de/image/css-grid.png">
+        <img src="https://caniuse.bitsofco.de/image/css-grid.jpg" alt="Data on support for the css-grid feature across the major browsers from caniuse.com">
+      </picture>
+    </p>
+<h2>Non accessible colors</h2>
+<h3>Code</h3>
+<pre><code class="language-liquid">{% caniuse &quot;css-grid&quot; &quot;current&quot; &quot;false&quot; %}
+</code></pre>
+<h3>Live example</h3>
+<p class="ciu_embed" data-feature="css-grid" data-periods="current" data-accessible-colours="false">
+      <picture>
+        <source type="image/webp" srcset="https://caniuse.bitsofco.de/image/css-grid.webp">
+        <source type="image/png" srcset="https://caniuse.bitsofco.de/image/css-grid.png">
+        <img src="https://caniuse.bitsofco.de/image/css-grid.jpg" alt="Data on support for the css-grid feature across the major browsers from caniuse.com">
+      </picture>
+    </p>
+<h2>All periods</h2>
+<h3>Code</h3>
+<p>{% caniuse &quot;css-grid&quot; &quot;future_3,future_2,future_1,current,past_1,past_2,past_3,past_4,past_5&quot; %}</p>
+<h3>Live example</h3>
+<p class="ciu_embed" data-feature="css-grid" data-periods="future_3,future_2,future_1,current,past_1,past_2,past_3,past_4,past_5" data-accessible-colours="true">
+      <picture>
+        <source type="image/webp" srcset="https://caniuse.bitsofco.de/image/css-grid.webp">
+        <source type="image/png" srcset="https://caniuse.bitsofco.de/image/css-grid.png">
+        <img src="https://caniuse.bitsofco.de/image/css-grid.jpg" alt="Data on support for the css-grid feature across the major browsers from caniuse.com">
+      </picture>
+    </p>
+
+  
+  <script src="https://cdn.jsdelivr.net/gh/ireade/caniuse-embed/public/caniuse-embed.min.js"></script>
+</body>
+</html>
